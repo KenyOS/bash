@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Stop docker servers before reboot"
-#docker stop $(docker ps -a -q)
-#sudo reboot
+docker stop $(docker ps -a -q)
+sudo reboot
