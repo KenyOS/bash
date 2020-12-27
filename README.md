@@ -11,3 +11,12 @@ http://stackoverflow.com/questions/4642915/passing-parameters-to-bash-when-execu
 ```
 curl http://foo.com/script.sh | bash -s arg1 arg2
 ```
+
+Function for zsh/bash config for easily call in the terminal
+```
+myfunction() {
+    bash <(curl -s https://bash.kenyos.me/$1)
+)
+```
+https://stackoverflow.com/questions/7131670/make-a-bash-alias-that-takes-a-parameter
+
