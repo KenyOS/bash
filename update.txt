@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "Update all Images"
-docker-compose pull
-echo "update all containers as necessary"
-docker-compose up -d
-#remove the old dangling images
-docker image prune
