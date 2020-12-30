@@ -1,0 +1,2 @@
+echo "wallabag db migration & update container"
+docker exec -t wallabag_wallabag_1 /var/www/wallabag/bin/console doctrine:migrations:migrate --env=prod --no-interaction
