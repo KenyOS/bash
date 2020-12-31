@@ -1,0 +1,3 @@
+#fly server restart
+echo "Restarting fly server.."
+cat "/mnt/SvBACKUP/flyctl/secret.txt" | xargs flyctl
