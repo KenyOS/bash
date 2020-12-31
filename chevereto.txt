@@ -3,3 +3,4 @@
 
 echo "Backup Mysql db from Chevereto.."
 cat "/mnt/SvBACKUP/mysql/chevereto/secret.txt" | xargs docker exec > /mnt/SvBACKUP/mysql/chevereto/backup.sql
+ls /mnt/SvBACKUP/mysql/chevereto/backup.sql
