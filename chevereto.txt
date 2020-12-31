@@ -1,0 +1,5 @@
+#backup my chevereto-mysql docker container with this nice tip from..
+#https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb
+
+echo "Backup Mysql db from Chevereto.."
+cat "/mnt/SvBACKUP/mysql/chevereto/secret.txt" | xargs docker exec > /mnt/SvBACKUP/mysql/chevereto/backup.sql
