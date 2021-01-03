@@ -1,0 +1,4 @@
+echo "Checking for stopped services.."
+docker ps --filter "status=exited"
+echo "==================================================================================="
+docker logs --tail=10 $(docker ps --filter "status=exited" -q)
