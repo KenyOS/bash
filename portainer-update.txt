@@ -1,0 +1,7 @@
+#!/bin/bash
+docker stop Portainer
+echo "Stop Portainer Service"
+docker rm Portainer
+echo "Recreating the latest Portainer build..."
+docker pull portainer/portainer-ce
+cat "/mnt/SvBACKUP/portainer/secret.txt" | xargs docker 
