@@ -1,3 +1,5 @@
 #!/bin/bash
 echo "NC Scanning..."
 cat "/mnt/SvBACKUP/nextcloud/scan.txt" | xargs docker 
+
+# docker exec -u <user who own nextcloud process> nextcloud bash -c "/usr/bin/php /config/www/nextcloud/occ files:scan <user>"
