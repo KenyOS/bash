@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "NC Scanning..."
+cat "/mnt/SvBACKUP/nextcloud/scan.txt" | xargs docker 
