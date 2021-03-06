@@ -29,3 +29,8 @@ cat ~/scripts/bash/flyctl/varsecret.txt | xargs -I % flyctl --app % restart
 
 https://unix.stackexchange.com/questions/3593/using-xargs-with-input-from-a-file
 
+finally, you can call simple as that.
+```
+sv flyrestart
+
+```
