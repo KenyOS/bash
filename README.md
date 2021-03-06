@@ -22,7 +22,10 @@ https://stackoverflow.com/questions/7131670/make-a-bash-alias-that-takes-a-param
 
 Then.. hide sensitivy information in your command line by using cat with xargs
 cat will take all the information from varsecret.txt and then send to xargs, xargs will store in this variable '%' (it can be anything' and you replace in the right location
+```
 cat ~/scripts/bash/flyctl/varsecret.txt | xargs -I % flyctl --app % restart
+
+```
 
 https://unix.stackexchange.com/questions/3593/using-xargs-with-input-from-a-file
 
