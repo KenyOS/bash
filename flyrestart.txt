@@ -1,3 +1,7 @@
 #fly server restart
 echo "Restarting fly server.."
-cat ~/scripts/bash/flyctl/secret.txt | xargs flyctl 
+#load var secret on excution
+cat ~/scripts/bash/flyctl/varsecret.txt | xargs svar1=
+flyctl -app $svar1 restart
+
+#cat ~/scripts/bash/flyctl/secret.txt | xargs flyctl 
