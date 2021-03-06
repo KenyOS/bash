@@ -4,4 +4,4 @@ echo "Stop Portainer Service"
 docker rm Portainer
 echo "Recreating the latest Portainer build..."
 docker pull portainer/portainer-ce
-cat "/mnt/SvBACKUP/portainer/secret.txt" | xargs docker 
+docker run -d -p 8000:8000 -p 9000:9000 --name="portainer" --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
