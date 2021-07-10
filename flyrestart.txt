@@ -2,7 +2,7 @@
 echo "Restarting fly server.."
 #Update flyctl tool
 echo "Flyctl tool update in progress.."
-flyctl version update
+yay -Syu flyctl
 #load var secret on excution
 cat ~/scripts/bash/flyctl/varsecret.txt | xargs -I username flyctl --app username restart
 
